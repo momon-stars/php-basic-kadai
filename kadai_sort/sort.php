@@ -25,14 +25,13 @@ declare(strict_types=1);
       // foreach($nums as $value){
       //   echo $value . '<br>';
       // }
-      function sort_2way($order){
-        //  ソートする配列を宣言
-        $array = [15, 4, 18, 23, 10 ];
+      function sort_2way($array,$order){
+        
         if($order){
           echo'昇順<br>';
           asort($array);
         } else {
-          echo"降順";
+          echo"降順<br>";
           arsort($array);
         }
 
@@ -40,8 +39,10 @@ declare(strict_types=1);
           echo $value.'<br>';
         }
       }
-      sort_2way(true);
-      sort_2way(false);
+      //  ソートする配列を宣言
+        $array = [15, 4, 18, 23, 10 ];
+      sort_2way($array,true);
+      sort_2way($array,false);
     ?>
 </body>
 
