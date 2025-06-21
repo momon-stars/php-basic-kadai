@@ -20,7 +20,7 @@ declare(strict_types=1);
       $this->name = $name;
       $this->price = $price;
     }
-    public function show_name(){
+    public function show_price(){
       echo $this->name.'<br>';
     }
   }
