@@ -21,7 +21,7 @@ declare(strict_types=1);
       $this->price = $price;
     }
     public function show_price(){
-      echo $this->name.'<br>';
+      echo $this->price.'<br>';
     }
   }
   $show_price = new Food('potato',250);
@@ -40,7 +40,7 @@ declare(strict_types=1);
       $this->weight = $weight;
     }
     public function show_height(){
-      echo $this->name.'<br>';
+      echo $this->height.'<br>';
     }
   }
   $show_height = new Animal('dog',60,5000);
